@@ -30,7 +30,7 @@ server.get('/', (req, res) => {
             message: "Sintaxe simples"
         },
     ];
-    res.render('pages/index')
+    res.render('pages/index', {qualities: items})
 })
 
 server.get('/sobre', (req,res) => {

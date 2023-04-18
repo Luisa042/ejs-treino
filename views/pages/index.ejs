@@ -10,6 +10,14 @@
             <h1>Node com EJS</h1>
             <p>trabalhando com arquivos ejs</p>
         </div>
+        
+        <ul>
+            <% qualities.forEach((item) => { %>
+                <li>
+                    <strong><%= item.title %></strong> <%= item.message %>
+                </li>
+            <% }) %>
+        </ul>
     </main>
 
 <%- include('../partials/footer'); %>
